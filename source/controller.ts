@@ -14,7 +14,7 @@ abstract class Controller {
 
     protected configuration: any;
 
-    clear(): void { }
+    protected clear?(): void { /* No op. Override this method if necessary. */ }
 
     constructor(options, configuration, router) {
 

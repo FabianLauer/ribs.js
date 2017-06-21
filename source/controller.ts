@@ -3,7 +3,7 @@
 import Backbone = require('backbone');
 import _ = require('underscore');
 
-class Controller {
+abstract class Controller {
 
     options: any;
     router: Backbone.Router;

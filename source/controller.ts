@@ -12,6 +12,8 @@ abstract class Controller {
     
     promise;
 
+    protected configuration: any;
+
     clear(): void { }
 
     constructor(options, configuration, router) {

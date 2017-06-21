@@ -1,0 +1,33 @@
+{
+    "exclude": [
+        "./build/**",
+        "node_modules/**",
+        "tools/**",
+        "typings/**",
+        "docs/**",
+        "tests/e2e/baseline/TypeScriptDeclarations/**"
+    ],
+    "compilerOptions": {
+        // Build Config
+        "target": "es6",
+        "module": "commonjs",
+        "declaration": false,
+
+        // Source Map Config
+        "sourceMap": true,
+
+        // Directories
+        "outDir": "./build/",
+        "baseUrl": "./src/",
+
+        // Language Rules
+        "allowJs": true,
+        "allowUnreachableCode": true,
+        "allowUnusedLabels": true,
+        
+        // Language Features
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": false
+    }
+}

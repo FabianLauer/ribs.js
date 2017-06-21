@@ -5,6 +5,9 @@
   },
   "description": "ribs.js, built around backbone.js",
   "devDependencies": {
+    "@types/backbone": "^1.3.34",
+    "@types/jquery": "^3.2.3",
+    "@types/underscore": "^1.8.1",
     "grunt": "^0.4.5"
   },
   "dependencies": {

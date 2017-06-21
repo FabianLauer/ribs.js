@@ -1,7 +1,7 @@
 'use strict';
 
-import _ = require('underscore');
-import $ = require('jquery');
+import * as _ from 'underscore';
+import * as $ from 'jquery';
 
 class Container {
 
@@ -144,4 +144,5 @@ class Container {
 
 }
 
-export = new Container();
+export const singleton = new Container();
+export default singleton;

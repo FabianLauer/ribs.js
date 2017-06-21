@@ -1,10 +1,21 @@
 ﻿/// <reference path="../scripts/typings/ribs/ribs.d.ts" />
 
-export import Collection = require('./collection');
-export import Container = require('./container');
-export import Controller = require('./controller');
-export import EventsManager = require('./eventsManager');
-export import Model = require('./model');
-export import Router = require('./router');
-export import View = require('./view');
-export import ViewHelper = require('./viewHelper');
+import Collection from './collection';
+import Container from './container';
+import Controller from './controller';
+import EventsManager from './eventsManager';
+import Model from './model';
+import Router from './router';
+import View from './view';
+import ViewHelper from './viewHelper';
+
+export {
+    Collection,
+    Container,
+    Controller,
+    EventsManager,
+    Model,
+    Router,
+    View,
+    ViewHelper
+}

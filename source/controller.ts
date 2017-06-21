@@ -1,9 +1,9 @@
 'use strict';
 
-import Backbone = require('backbone');
-import _ = require('underscore');
+import * as Backbone from 'backbone';
+import * as _ from 'underscore';
 
-abstract class Controller {
+export abstract class Controller {
     public onInitialize;
     
     protected promise;
@@ -41,4 +41,4 @@ abstract class Controller {
     }
 }
 
-export = Controller;
+export default Controller;

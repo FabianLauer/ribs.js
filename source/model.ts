@@ -1,10 +1,10 @@
 'use strict';
 
-import Backbone = require('backbone');
-import $ = require('jquery');
-import _ = require('underscore');
+import * as Backbone from 'backbone';
+import * as _ from 'underscore';
+import * as $ from 'jquery';
 
-class Model extends Backbone.Model {
+export class Model extends Backbone.Model {
 
     constructor(attributes, options?) {
         super(attributes, options);
@@ -168,4 +168,4 @@ class Model extends Backbone.Model {
     onInitializeStart;
 };
 
-export = Model;
+export default Model;

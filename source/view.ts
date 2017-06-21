@@ -1,12 +1,12 @@
 'use strict';
 
-import ViewHelper = require('./viewHelper');
-import Container = require('./container');
-import Backbone = require('backbone');
-import $ = require('jquery');
-import _ = require('underscore');
+import ViewHelper from './viewHelper';
+import Container from './container';
+import * as Backbone from 'backbone';
+import * as $ from 'jquery';
+import * as _ from 'underscore';
 
-class View extends Backbone.View<Backbone.Model> {
+export class View extends Backbone.View<Backbone.Model> {
 	
     defaultOptions = {
         removeModelOnClose: true, // Boolean: If true, remove model from its collection on view close
@@ -612,4 +612,4 @@ class View extends Backbone.View<Backbone.Model> {
 
 }
 
-export = View;
+export default View;

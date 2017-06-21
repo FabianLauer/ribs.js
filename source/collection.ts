@@ -1,9 +1,9 @@
 'use strict';
 
-import Backbone = require('backbone');
-import _ = require('underscore');
+import * as Backbone from 'backbone';
+import * as _ from 'underscore';
 
-class Collection extends Backbone.Collection<Backbone.Model> {
+export class Collection extends Backbone.Collection<Backbone.Model> {
 
     options: any;
     onInitialize;
@@ -36,7 +36,7 @@ class Collection extends Backbone.Collection<Backbone.Model> {
     }
 
     getFilteredCollection (onlyDatas, notDatas) {
-        var filteredCollection = new Ribs.Collection();
+        var filteredCollection = new Collection();
         
         if (this.collectionSource === null) {
             
@@ -273,4 +273,4 @@ class Collection extends Backbone.Collection<Backbone.Model> {
         
 }
 
-export = Collection;
+export default Collection;

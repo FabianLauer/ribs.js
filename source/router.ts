@@ -1,10 +1,10 @@
 'use strict';
 
-import EventsManager = require('./eventsManager');
-import Backbone = require('backbone');
-import _ = require('underscore');
+import EventsManager from './eventsManager';
+import * as Backbone from 'backbone';
+import * as _ from 'underscore';
 
-class Router extends Backbone.Router {
+export class Router extends Backbone.Router {
 
     constructor() {
         super();
@@ -96,4 +96,4 @@ class Router extends Backbone.Router {
 
 }
 
-export = Router;
+export default Router;
